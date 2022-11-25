@@ -1,27 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Dosis&display=swap');
 
+
 body {
     background-color: #18181A;
     animation: 1s ease-out 0s 1 onload_body;
+    color: white;
+    overflow: hidden;
+
 }
 
-h1, h3, h4 {
+h1, h3, h4, button {
     text-align: center;
     font-family: 'Dosis', sans-serif;
-    color: white;
-}
-
-img {
-    max-width: 100%;
-    width: 7.5%;
-    margin-left: 1%;
-    margin-right: 1%;
-    transition: .5s ease-in-out;
-    animation: 1s ease-out 0s 1 onload_image;
-}
-
-img:hover {
-    transform: scale(1.2);
 }
 
 .title {
@@ -30,7 +20,7 @@ img:hover {
 }
 
 .intro {
-    margin-top: 5%;
+    margin-top: 7.5%;
     font-size: 25px;
 }
 
@@ -61,3 +51,24 @@ img:hover {
         margin-right: 1%;
     }
 }
+
+.light-mode {
+    background-color: #f7f7f7;
+    color:#18181A;  
+}
+
+.mode-toggle {
+    width: 2.5%;
+    float: right;
+}
+
+.top {
+    display: flex;
+    justify-content: space-between;
+}
+
+.theme-toggle {
+    margin-top: 1.5em;
+    margin-right: 3em; 
+}
+

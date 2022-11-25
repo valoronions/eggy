@@ -5,20 +5,31 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="style.css"/>
+        <link rel="stylesheet" href="toggle.css"/>
         <title>Eggy</title>
     </head>
     <body>
-        <h1 class="title">Eggy</h1>
+      <div class="top">
+          <h1 class="title">Eggy</h1> 
+          <label class="theme-toggle" title="Toggle theme">
+            <input type="checkbox" class="theme-checkbox"/>
+            <span class="theme-toggle-sr">Toggle theme</span>
+            <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" class="theme-toggle__within"  height="2.5em" width="2.5em" viewBox="0 0 32 32" fill="currentColor" viewBox="0 0 32 32">
+                <clipPath id="theme-toggle__within__clip">
+                    <path d="M0 0h32v32H0Zm6 16a1 1 0 0 0 20 0 1 1 0 0 0-20 0"/>
+                </clipPath>
+                <g clip-path="url(#theme-toggle__within__clip)">
+                    <path d="M25.6 19.5 23.2 16l2.4-3.4c.2-.3 0-.8-.4-.9l-4.1-.7-.7-4.1c-.1-.4-.6-.6-.9-.4L16 8.8l-3.5-2.4c-.3-.2-.8 0-.9.4l-.7 4.1-4.1.7c-.4.1-.6.6-.4.9L8.8 16l-2.4 3.4c-.2.3 0 .8.4.9l4.1.7.7 4.1c.1.4.6.6.9.4l3.4-2.4 3.4 2.4c.3.2.8 0 .9-.4l.7-4.1 4.1-.7c.6 0 .8-.5.6-.8zM16 21.9c-3.3 0-5.9-2.7-5.9-5.9 0-3.3 2.7-5.9 5.9-5.9s5.9 2.7 5.9 5.9c0 3.3-2.6 5.9-5.9 5.9z"/>
+                </g>
+                <path d="M16 3.6C9.1 3.6 3.7 9.1 3.7 15.9S9 28.4 16 28.4s12.3-5.6 12.3-12.3S22.9 3.6 16 3.6zm0 21.6c-5.1 0-9.1-4.3-9.1-9.3s4-9.1 9.1-9.1 9.1 4.3 9.1 9.3-4 9.1-9.1 9.1z" class="theme-toggle__within__circle"/>
+                <path d="M19 5.2c-4.3 0-7.7 3.5-7.7 7.7s3.3 7.9 7.7 7.9 7.7-3.5 7.7-7.7-3.4-7.9-7.7-7.9z" class="theme-toggle__within__inner"/>
+            </svg>
+        </label>
+      </div>
         <div class="intro">
             <h1>Hi, I'm Eggy.</h1>
             <h3>I am a 13 year old aspiring web developer.</h3>
-            <h4>Skills:</h4>
         </div>
-        <div class="images">
-            <img src="assets/html.png" alt="HTML Logo"/>
-            <img src="assets/css.png" alt="CSS Logo" id="css"/>
-            <img src="assets/javascript.jpg" alt="JavaScript Logo"/>
-            <img src="assets/csharp.png" alt="C# Logo"/>
-        </div> 
+        <script type="text/javascript" src="theme.js"></script>
     </body>
 </html>
