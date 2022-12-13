@@ -1,0 +1,135 @@
+table {
+    margin: 0px auto;
+
+}
+td {
+    border: 1px solid #f7f7f7;
+    font-size: 25px;
+    padding: 15px;
+    transition: linear 0.2s;
+    position: relative;
+}
+
+td:hover:not(.blank, .lanthanide-square, .actinide-square) {
+    background-color: #f7f7f7;
+    color: #18181A;
+    cursor: pointer;
+}
+.contiguous {
+    width: 50%;
+}
+
+.lanthanide, .actinide {
+    width: 35%;
+}
+
+.lanthanide {
+    margin-top: 0.5%;
+}
+.blank {
+    border: none;
+}
+
+.series-title {
+    font-size: 20px;
+    white-space: nowrap;
+    border: none;
+}
+
+td span {
+    font-size: 15px;
+    position: absolute;
+    top: -1.25px;
+    left: 3px;
+}
+
+.title {
+    margin-bottom: 75px;
+}
+
+
+dialog {
+    background: #18181A;
+    border: 0.25px solid #f7f7f7;
+    color: #f7f7f7;
+    position: absolute;
+    top: 10%;
+    width: 400px;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 2px 25px rgba(247, 247, 247, 0.2);
+    padding: 50px;
+}
+
+.blur-dark {
+    background-color: rgba(24, 24, 26, 0.9);
+    transition: linear 0.2s;
+    z-index: 999;
+}
+
+.blur-light {
+    background-color: rgba(247, 247, 247, 0.2);
+    transition: linear 0.2s;
+    z-index: 999;
+}
+
+.big {
+    font-size: 90px;
+    padding: 0px;
+    margin-bottom: 20px;
+    margin-top: 0px;
+}
+
+.details-list {
+    list-style: none;
+    text-align: left;
+    margin-bottom: 0%;
+}
+
+li span {
+    font-weight: bold;
+}
+
+.element-number {
+    margin-bottom: 0px;
+}
+
+.close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 0px;
+    margin-right: 15px;
+    font-size: 35px;
+}
+
+.close:hover {
+    cursor: pointer;
+}
+
+.footer p {
+    margin: 0px;
+    font-size: 15px;
+    color: #58585b;
+}
+
+.footer a {
+    font-style: italic;
+}
+
+.light-mode-borders:not(.blank, .series-title) {
+    border: 1px solid #18181A !important;
+}
+
+.light-mode-cellhover:hover:not(.blank, .lanthanide-square, .actinide-square) {
+    background-color: #18181A;
+    color: #f7f7f7;
+    cursor: pointer;
+}
+
+.light-mode-modal {
+    background-color: #f7f7f7 !important;
+    border: 0.25px solid #18181A !important;
+    color: #18181A !important;
+    box-shadow: 0 2px 25px rgba(24, 24, 26, 0.9) !important;
+}

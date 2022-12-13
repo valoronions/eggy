@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Periodic Table</title>
+        <link rel="stylesheet" href="periodic.css"/>
+        <link rel="stylesheet" href="../style.css"/>
+        <link rel="stylesheet" href="../toggle.css"/>
+    </head>
+    <body>
+        <div class="top">
+            <h1 class="title"><a href="../index.html">Eggy</a></h1>
+            <label class="theme-toggle" title="Toggle theme">
+                <input type="checkbox" class="theme-checkbox"/>
+                <span class="theme-toggle-sr">Toggle theme</span>
+                <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" class="theme-toggle__within"  height="2.5em" width="2.5em" viewBox="0 0 32 32" fill="currentColor" viewBox="0 0 32 32">
+                    <clipPath id="theme-toggle__within__clip">
+                        <path d="M0 0h32v32H0Zm6 16a1 1 0 0 0 20 0 1 1 0 0 0-20 0"/>
+                    </clipPath>
+                    <g clip-path="url(#theme-toggle__within__clip)">
+                        <path d="M25.6 19.5 23.2 16l2.4-3.4c.2-.3 0-.8-.4-.9l-4.1-.7-.7-4.1c-.1-.4-.6-.6-.9-.4L16 8.8l-3.5-2.4c-.3-.2-.8 0-.9.4l-.7 4.1-4.1.7c-.4.1-.6.6-.4.9L8.8 16l-2.4 3.4c-.2.3 0 .8.4.9l4.1.7.7 4.1c.1.4.6.6.9.4l3.4-2.4 3.4 2.4c.3.2.8 0 .9-.4l.7-4.1 4.1-.7c.6 0 .8-.5.6-.8zM16 21.9c-3.3 0-5.9-2.7-5.9-5.9 0-3.3 2.7-5.9 5.9-5.9s5.9 2.7 5.9 5.9c0 3.3-2.6 5.9-5.9 5.9z"/>
+                    </g>
+                    <path d="M16 3.6C9.1 3.6 3.7 9.1 3.7 15.9S9 28.4 16 28.4s12.3-5.6 12.3-12.3S22.9 3.6 16 3.6zm0 21.6c-5.1 0-9.1-4.3-9.1-9.3s4-9.1 9.1-9.1 9.1 4.3 9.1 9.3-4 9.1-9.1 9.1z" class="theme-toggle__within__circle"/>
+                    <path d="M19 5.2c-4.3 0-7.7 3.5-7.7 7.7s3.3 7.9 7.7 7.9 7.7-3.5 7.7-7.7-3.4-7.9-7.7-7.9z" class="theme-toggle__within__inner"/>
+                </svg>
+            </label>
+        </div>
+        <div class="table">
+            <table class="contiguous">
+                <tr>
+                    <!--7x18-->
+                    <td class="element"><span>1</span>H</td>
+                    <td class="blank" colspan="16"></td>
+                    <td class="element"><span>2</span>He</td>   
+                </tr>
+                <tr>
+                    <td class="element"><span>3</span>Li</td>
+                    <td class="element"><span>4</span>Be</td>
+                    <td class="blank" colspan="10"></td>
+                    <td class="element"><span>5</span>B</td>
+                    <td class="element"><span>6</span>C</td>
+                    <td class="element"><span>7</span>N</td>
+                    <td class="element"><span>8</span>O</td>
+                    <td class="element"><span>9</span>F</td>
+                    <td class="element"><span>10</span>Ne</td>
+                </tr>
+                <tr>
+                    <td class="element"><span>10</span>Na</td>
+                    <td class="element"><span>11</span>Mg</td>
+                    <td class="blank" colspan="10"></td>
+                    <td class="element"><span>12</span>Al</td>
+                    <td class="element"><span>13</span>Si</td>
+                    <td class="element"><span>14</span>P</td>
+                    <td class="element"><span>16</span>S</td>
+                    <td class="element"><span>17</span>Cl</td>
+                    <td class="element"><span>18</span>Ar</td>
+                </tr>
+                <tr>
+                    <td class="element"><span>19</span>K</td>
+                    <td class="element"><span>20</span>Ca</td>
+                    <td class="element"><span>21</span>Sc</td>
+                    <td class="element"><span>22</span>Ti</td>
+                    <td class="element"><span>23</span>V</td>
+                    <td class="element"><span>24</span>Cr</td>
+                    <td class="element"><span>25</span>Mn</td>
+                    <td class="element"><span>26</span>Fe</td>
+                    <td class="element"><span>27</span>Co</td>
+                    <td class="element"><span>28</span>Ni</td>
+                    <td class="element"><span>29</span>Cu</td>
+                    <td class="element"><span>30</span>Zn</td>
+                    <td class="element"><span>31</span>Ga</td>
+                    <td class="element"><span>32</span>Ge</td>
+                    <td class="element"><span>33</span>As</td>
+                    <td class="element"><span>34</span>Se</td>
+                    <td class="element"><span>35</span>Br</td>
+                    <td class="element"><span>36</span>Kr</td>
+                </tr>
+                <tr>
+                    <td class="element"><span>37</span>Rb</td>
+                    <td class="element"><span>38</span>Sr</td>
+                    <td class="element"><span>39</span>Y</td>
+                    <td class="element"><span>40</span>Zr</td>
+                    <td class="element"><span>41</span>Nb</td>
+                    <td class="element"><span>42</span>Mo</td>
+                    <td class="element"><span>43</span>Tc</td>
+                    <td class="element"><span>44</span>Ru</td>
+                    <td class="element"><span>45</span>Rh</td>
+                    <td class="element"><span>46</span>Pd</td>
+                    <td class="element"><span>47</span>Ag</td>
+                    <td class="element"><span>48</span>Cd</td>
+                    <td class="element"><span>49</span>In</td>
+                    <td class="element"><span>50</span>Sn</td>
+                    <td class="element"><span>51</span>Sb</td>
+                    <td class="element"><span>52</span>Te</td>
+                    <td class="element"><span>53</span>I</td>
+                    <td class="element"><span>54</span>Xe</td>
+                </tr>
+                <tr>
+                    <td class="element"><span>55</span>Cs</td>
+                    <td class="element"><span>56</span>Ba</td>
+                    <td class="lanthanide-square"><span>57-71</span></td>
+                    <td class="element"><span>72</span>Hf</td>
+                    <td class="element"><span>73</span>Ta</td>
+                    <td class="element"><span>74</span>W</td>
+                    <td class="element"><span>75</span>Re</td>
+                    <td class="element"><span>76</span>Os</td>
+                    <td class="element"><span>77</span>Ir</td>
+                    <td class="element"><span>78</span>Pt</td>
+                    <td class="element"><span>79</span>Au</td>
+                    <td class="element"><span>80</span>Hg</td>
+                    <td class="element"><span>81</span>Tl</td>
+                    <td class="element"><span>82</span>Pb</td>
+                    <td class="element"><span>83</span>Bi</td>
+                    <td class="element"><span>84</span>Po</td>
+                    <td class="element"><span>85</span>At</td>
+                    <td class="element"><span>86</span>Rn</td>
+                </tr>
+                <tr>
+                    <td class="element"><span>87</span>Fr</td>
+                    <td class="element"><span>88</span>Ra</td>
+                    <td class="actinide-square"><span>89-103</span></td>
+                    <td class="element"><span>104</span>Rf</td>
+                    <td class="element"><span>105</span>Db</td>
+                    <td class="element"><span>106</span>Sg</td>
+                    <td class="element"><span>107</span>Bh</td>
+                    <td class="element"><span>108</span>Hs</td>
+                    <td class="element"><span>109</span>Mt</td>
+                    <td class="element"><span>110</span>Ds</td>
+                    <td class="element"><span>111</span>Rg</td>
+                    <td class="element"><span>112</span>Cn</td>
+                    <td class="element"><span>113</span>Nh</td>
+                    <td class="element"><span>114</span>Fl</td>
+                    <td class="element"><span>115</span>Mc</td>
+                    <td class="element"><span>116</span>Lv</td>
+                    <td class="element"><span>117</span>Ts</td>
+                    <td class="element"><span>118</span>Og</td>
+                </tr>
+            </table>
+            <table class="series">
+                <tr>
+                    <td class="series-title">Lanthanide Series</td>
+                    <td class="element"><span>57</span>La</td>
+                    <td class="element"><span>58</span>Ce</td>
+                    <td class="element"><span>59</span>Pr</td>
+                    <td class="element"><span>60</span>Nd</td>
+                    <td class="element"><span>61</span>Pm</td>
+                    <td class="element"><span>62</span>Sm</td>
+                    <td class="element"><span>63</span>Eu</td>
+                    <td class="element"><span>64</span>Gd</td>
+                    <td class="element"><span>65</span>Tb</td>
+                    <td class="element"><span>66</span>Dy</td>
+                    <td class="element"><span>67</span>Ho</td>
+                    <td class="element"><span>68</span>Er</td>
+                    <td class="element"><span>69</span>Tm</td>
+                    <td class="element"><span>70</span>Yb</td>
+                    <td class="element"><span>71</span>Lu</td>
+                </tr>
+            </table>
+            <table class="series">
+                <tr>
+                    <td class="series-title">Actinide Series</td>
+                    <td class="element"><span>89</span>Ac</td>
+                    <td class="element"><span>90</span>Th</td>
+                    <td class="element"><span>91</span>Pa</td>
+                    <td class="element"><span>92</span>U</td>
+                    <td class="element"><span>93</span>Np</td>
+                    <td class="element"><span>94</span>Pu</td>
+                    <td class="element"><span>95</span>Am</td>
+                    <td class="element"><span>96</span>Cm</td>
+                    <td class="element"><span>97</span>Bk</td>
+                    <td class="element"><span>98</span>Cf</td>
+                    <td class="element"><span>99</span>Es</td>
+                    <td class="element"><span>100</span>Fm</td>
+                    <td class="element"><span>101</span>Md</td>
+                    <td class="element"><span>102</span>No</td>
+                    <td class="element"><span>103</span>Lr</td>
+                </tr>
+            </table>
+        </div>
+        <dialog class="info_modal">
+            <span class="close">&times;</span>
+            <h1 class="element-name">ELEMENT_NAME</h1>
+            <h2 class="element-number">ATOMIC_NUMBER</h2>
+            <h1 class="element-abbr big">ELEMENT_ABBR</h1>
+            <hr/>
+            <div class="details">
+                <ul class="details-list">
+                    <li>Atomic mass: <span class="detail element-mass">ATOMIC_MASS</span></li>
+                    <li>Type: <span class="detail element-type">ELEMENT_TYPE</span></li>
+                    <li>Boiling point: <span class="detail element-boil">BOILING_POINT</span></li>
+                    <li>Melting point: <span class="detail element-melt">MELTING_POINT</span></li>
+                    <li>Discovered by: <span class="detail element-discover">DISCOVERER</span></li>
+                </ul>
+            </div>
+            <br/><br/>
+            <div class="footer">
+                <p>Some numbers may be rounded</p>
+                <a href="" target="_blank" class="element-wiki">Wikipedia page for this element</a>
+            </div>
+        </dialog>
+        <script type="module" src="periodic.js"></script>
+        <script type="text/javascript" src="../theme.js"></script>
+    </body>
+</html>
