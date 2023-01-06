@@ -73,3 +73,14 @@ body {
     background-color: #989898 !important;
 }
 
+.blur-dark {
+    background-color: rgba(24, 24, 26, 0.3);
+    transition: linear 0.2s;
+    z-index: 999;
+}
+
+.blur-light {
+    background-color: rgba(24, 24, 26, 0.5);
+    transition: linear 0.2s;
+    z-index: 999;
+}

@@ -2,6 +2,8 @@ const elements = document.querySelectorAll(".element");
 const reader = document.querySelector(".mass_reader");
 const modal = document.querySelector(".info_modal");
 const close = document.querySelector(".close");
+const fetchLocalStorage = localStorage.getItem("isLight");
+
 
 //property declarations
 const element_name = document.querySelector(".element-name");
@@ -14,6 +16,7 @@ const melt = document.querySelector(".element-melt");
 const discover = document.querySelector(".element-discover");
 const wiki = document.querySelector(".element-wiki");
 
+//please dont look at this
 
 fetch('./data.json').then(response => response.json()).then(obj => { 
     elements.forEach((element, index) => {
@@ -24,17 +27,25 @@ fetch('./data.json').then(response => response.json()).then(obj => {
             abbr.innerHTML = curEl.symbol;
             mass.innerHTML = curEl.atomic_mass;
             type.innerHTML = curEl.category;
-            if (curEl.boil) {boil.innerHTML = curEl.boil+"K";} else {boil.innerHTML = "unknown";}
-            if (curEl.melt) {melt.innerHTML = curEl.melt+"K";} else {melt.innerHTML = "unknown";}
+            if (curEl.boil) {
+                boil.innerHTML = curEl.boil+"K";
+            } else {
+                boil.innerHTML = "unknown";
+            }
+            if (curEl.melt) {
+                melt.innerHTML = curEl.melt+"K";
+            } else {
+                melt.innerHTML = "unknown";
+            }
             discover.innerHTML = curEl.discovered_by;
             wiki.setAttribute("href", curEl.source);
-            document.body.classList.add("blur");
+            if (fetchLocalStorage == "true") {document.body.classList.add("blur-light");} else {document.body.classList.add("blur-dark");} 
             modal.show();
         });
     });
 }); 
 
 close.addEventListener("click", () => {
-    document.body.classList.remove("blur");
+    if (fetchLocalStorage == "true") {document.body.classList.remove("blur-light");} else {document.body.classList.remove("blur-dark");} 
     modal.close();
 });

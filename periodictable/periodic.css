@@ -61,18 +61,6 @@ dialog {
     padding: 50px;
 }
 
-.blur-dark {
-    background-color: rgba(24, 24, 26, 0.9);
-    transition: linear 0.2s;
-    z-index: 999;
-}
-
-.blur-light {
-    background-color: rgba(247, 247, 247, 0.2);
-    transition: linear 0.2s;
-    z-index: 999;
-}
-
 .big {
     font-size: 90px;
     padding: 0px;
